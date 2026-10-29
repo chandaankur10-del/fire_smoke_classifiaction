@@ -1,9 +1,9 @@
 import streamlit as st
 import cv2
 import numpy as np
-from ultralytics import YOLO
-import tempfile
 import os
+import tempfile
+from ultralytics import YOLO
 
 st.set_page_config(page_title="Smoke and Fire Classification", layout="centered")
 st.title("—— Smoke & Fire Classification App ——")
