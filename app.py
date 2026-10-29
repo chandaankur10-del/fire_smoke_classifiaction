@@ -5,6 +5,13 @@ import os
 import tempfile
 from ultralytics import YOLO
 
+
+# Find best.pt in the same directory as app.py
+model_path = os.path.join(
+    os.path.dirname(os.path.abspath(__file__)),
+    "best.pt"
+)
+
 st.set_page_config(page_title="Smoke and Fire Classification", layout="centered")
 st.title("—— Smoke & Fire Classification App ——")
 st.write("Upload an MP4 video below to run classification using our YOLO classification model.")
