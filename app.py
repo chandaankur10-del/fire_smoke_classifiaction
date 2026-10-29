@@ -10,7 +10,7 @@ st.title("—— Smoke & Fire Classification App ——")
 st.write("Upload an MP4 video below to run classification using our YOLO classification model.")
 
 # Input: Path to classification model weights
-model_path = st.text_input("Model Weights Path", "/content/runs/classify/train/weights/best.pt")
+model_path = st.text_input("Model Weights Path", "/content/runs/classify/train-4/weights/best.pt")
 
 # Load the YOLO Classification Model
 @st.cache_resource
